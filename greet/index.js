@@ -1,5 +1,4 @@
-function greet() {
-	console.log('Hello!');
-}
+const english = require('./english');
+const shona = require('./shona');
 
-module.exports = greet;
+module.exports = { english, shona };

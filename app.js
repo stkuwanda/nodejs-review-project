@@ -1,2 +1,3 @@
-const greet = require('./greet');
-greet();
+const { english, shona } = require('./greet');
+english();
+shona();
