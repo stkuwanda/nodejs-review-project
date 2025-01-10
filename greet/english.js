@@ -1,5 +1,7 @@
+const { en } = require('./greeting.json');
+
 function greet() {
-  console.log('Hello!');
+	console.log(en);
 }
 
 module.exports = greet;
