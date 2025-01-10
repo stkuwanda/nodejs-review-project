@@ -1,7 +1,8 @@
-const { sh } = require('./greeting.json');
+// const { sh } = require('./greeting.json');
+import greetings from './greeting.json' with { type: 'json' };
 
-function greet() {
-	console.log(sh);
+export default function sh() {
+	console.log(greetings.sh);
 }
 
-module.exports = greet;
+// module.exports = greet;

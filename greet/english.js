@@ -1,7 +1,8 @@
-const { en } = require('./greeting.json');
+// const { en } = require('./greeting.json');
+import greetings from './greeting.json' with { type: 'json' };
 
-function greet() {
-	console.log(en);
+export default function en() {
+	console.log(greetings.en);
 }
 
-module.exports = greet;
+// module.exports = greet;
