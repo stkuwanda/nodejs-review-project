@@ -4,16 +4,19 @@ import { english, shona } from './greet/index.js'; // run will not be available 
 import run from './greet/index.js'; // run will be available from default export
 // import Emitter from './emitter.js';
 import Emitter from 'events';
+import events from './events.json' with { type: 'json'};
+
+const { greet } = events;
 
 // setting up the event emitter object
 const emtr = new Emitter();
 
 // setting up event type and corresponding listener/handler
-emtr.on('greet', function() {
+emtr.on(greet, function() {
   console.log('A greeting has occurred!');
 });
 
-emtr.on('greet', function () {
+emtr.on(greet, function () {
   run();
 });
 
@@ -22,7 +25,7 @@ english();
 shona();
 
 // programmatically emitting the event
-emtr.emit('greet');
+emtr.emit(greet);
 
 
 
