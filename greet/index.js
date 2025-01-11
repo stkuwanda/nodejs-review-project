@@ -9,7 +9,7 @@ import sh from './shona.js';
 export const english = en;
 export const shona = sh;
 export default function run() {
-	console.log('I ran!');
+	console.log('Greetings are being processed.');
 }
 
 

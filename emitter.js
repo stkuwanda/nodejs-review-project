@@ -1,4 +1,4 @@
-export function Emitter() {
+export default function Emitter() {
 	this.events = {};
 }
 
@@ -14,16 +14,16 @@ Emitter.prototype.emit = function (type) {
 		}
 };
 
-console.log('A sample EventEmitter');
-const emitter = new Emitter();
+// console.log('A sample EventEmitter');
+// const emitter = new Emitter();
 
-emitter.on('greet', function () {
-  console.log('The greeting was received.');
-});
+// emitter.on('greet', function () {
+//   console.log('The greeting was received.');
+// });
 
-emitter.on('greet', function () {
-  console.log('it is a wonderful day to receive a greeting!');
-});
+// emitter.on('greet', function () {
+//   console.log('it is a wonderful day to receive a greeting!');
+// });
 
-console.log('Hi there!');
-emitter.emit('greet');
+// console.log('Hi there!');
+// emitter.emit('greet');
