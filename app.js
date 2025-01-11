@@ -2,7 +2,8 @@
 
 import { english, shona } from './greet/index.js'; // run will not be available since it's a default export
 import run from './greet/index.js'; // run will be available from default export
-import Emitter from './emitter.js';
+// import Emitter from './emitter.js';
+import Emitter from 'events';
 
 // setting up the event emitter object
 const emtr = new Emitter();
