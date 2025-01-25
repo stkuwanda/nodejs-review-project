@@ -8,5 +8,8 @@
     "start": "node require-express.js"
   },
   "author": "KUWANDA",
-  "license": "ISC"
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.21.2"
+  }
 }
