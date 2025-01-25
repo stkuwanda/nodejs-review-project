@@ -1,0 +1,12 @@
+{
+  "name": "consuming-modules",
+  "version": "1.0.0",
+  "description": "Project reviewing modules and how to consume them as well as managing packages with NPM.",
+  "main": "require-express.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node require-express.js"
+  },
+  "author": "KUWANDA",
+  "license": "ISC"
+}
