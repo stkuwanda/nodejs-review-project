@@ -1,0 +1,20 @@
+which(linux) and where(windows) command option:
+use the command to see where a module has been installed.
+$which <module>
+
+npx:
+this command allows you to execute a global module without having it globally 
+installed on your system.
+$npx <global module>
+using npx can be preferable as it enables you to run packages without polluting 
+your global namespace. 
+It can also help when you need to execute different versions of a package on a per-project 
+basis as it avoids any global version conflicts.
+
+ssh-keygen:
+used to generate ssh key pairs
+$ssh-keygen
+the generated key pairs can be accessed inside ~/.ssh folder
+display the public key:
+$cat ~/.ssh/id_ed25519.pup
+never display the private key
